@@ -68,12 +68,13 @@ for k in range(0,V):
                 parent[i][j] = parent[k][j]         
                 
 # display shortest paths 
-for i in range (0,V):
+"""for i in range (0,V):
     print
     for j in range (0,V):
         print "From :", i+1, " To :", j+1
         print "Path :", str(i+1) + obtainPath(i,j) + str(j+1)
         print "Distance :", dist[i][j]
+"""
 np.savetxt('time.txt', dist, fmt='%-3.0f')        
 
 fil.close()
